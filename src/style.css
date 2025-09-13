@@ -1,0 +1,91 @@
+body, html{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('clock-back1.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  opacity: 0.99;
+}
+
+#container{
+  display: flex;
+  flex-direction: column;
+  height: 30%;
+  width: 40%;
+  border-radius: 15px;
+  background: #000000f3;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#container .clock{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40%;
+  width: 70%;
+}
+
+
+.clock #hrs, #mins, #secs{
+  width: 20%;
+  height: 70%;
+  background: #424242;
+  background: linear-gradient(274deg, rgba(66, 66, 66, 1) 0%, rgba(69, 69, 69, 1) 59%, rgba(94, 94, 94, 1) 100%);
+  color: rgb(255, 217, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+  font-weight: bold;
+  text-shadow:
+  0 0 8px #ff3a00,
+  0 0 16px #ff7300,    
+  0 0 32px #ff421a,    
+  0 0 48px #ffb84d;
+
+}
+
+.clock #colon{
+  color: red;
+  text-shadow:
+  0 0 8px #ff3a00,
+  0 0 16px #ff7300,    
+  0 0 32px #ff421a,    
+  0 0 48px #ffb84d;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+#container .format{
+  display: flex;
+  width: 70%;
+  color: whitesmoke;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1vw;
+}
+
+.format input:checked{
+  accent-color: gold;
+  box-shadow:
+  0 0 8px #ff3a00,
+  0 0 16px #ff7300,    
+  0 0 32px #ff421a,    
+  0 0 48px #ffb84d;
+}
+
+.format input:checked + p{
+  color: gold;
+  text-shadow:
+  0 0 8px #ff3a00,
+  0 0 16px #ff7300,    
+  0 0 32px #ff421a,    
+  0 0 48px #ffb84d;
+}
